@@ -2,7 +2,7 @@ package main
 
 func main() {
 
-	// you can declare varables in two ways:
+	// you can declare variables in two ways:
 	// 1- var card string = "Ace of Spades"
 
 	// only works when the declaring a variable not reassigning it
@@ -27,10 +27,16 @@ func main() {
 	// hand.print()
 	// remainingCards.print()
 
-	cards := newDeck()
+	// cards := newDeck()
 	// fmt.Println(cards.toString())
-	cards.saveToFile("my_cards")
+	// cards.saveToFile("my_cards")
 
+	// cards := deckFromFile("my_cards")
+	// cards.print()
+
+	cards := newDeck()
+	cards.shuffle()
+	cards.print()
 }
 
 // return value of type string
